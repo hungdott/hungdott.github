@@ -1,6 +1,6 @@
 const playVideo=require('./playVideo')
 function openCamera(cb){
-    navigator.mediaDevices.getUserMedia({audio:false,video: true})
+    navigator.mediaDevices.getUserMedia({audio:true,video: true})
     .then(stream=>{
         cb(stream)
     })
