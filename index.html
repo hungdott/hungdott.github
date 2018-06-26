@@ -4,21 +4,79 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+    <!-- <script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+     $( document ).ready( function () {
+         $.ajax ({
+             url: "https://global.xirsys.net/_turn/hungdo99ttbn/",
+             type: "PUT",
+             async: false,
+             headers: {
+               "Authorization": "Basic " + btoa("hungdo:06081f0c-7558-11e8-a620-264837236acc")
+             },
+             success: function (res){
+               console.log("ICE List: "+res.v.iceServers);
+             }
+         });
+     })
+  </script>  </script>-->
+   <style>
+    video {
+    object-fit: fill;
+    }
+        *{
+    margin: 0;
+    padding:0;
+    }
+      #wrapvideo{
+         float: right;
+         width: 700px;
+         height: 500px;
+         position: relative;
+      }
+      #friendStream{
+        background-size: cover;
+        height: 100%;
+        min-width: 100%;
+      }
+      #localStream{
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      #wraptex{
+         float: left;
+         width: 200px;
+      }
+      #wrap{
+          width: 960px;
+          margin: 0 auto;
+          
+      }
+      #peer1-id{
+          text-align: center;
+      }
+  
+  </style> 
   
 </head>
 <body>
+    <div id="wrap">
     <h3 id="peer1-id">My Peer: </h3>
-    <div>
-        <video id="localStream" width="300" controls></video>
-        <video id="friendStream" width="300" controls></video>
+    <div id="wrapvideo">
+        <video id="friendStream"  width="200" height="150" controls></video>
+        <video id="localStream" width="200" height="150" controls></video>
     </div>
+    <div id="wraptex">
     <br>
-    <input type="text" id="txtFriendId" placeholder="your friendid" />
+    <input type="text" id="txtFriendId" placeholder="your friend id" />
     <br>
     <button id="btnCall">Call</button>
     <br>
+</div>
+</div>
     
 </body>
 <script src="./dist/bundle.js"></script>
