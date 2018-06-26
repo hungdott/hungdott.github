@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
+    <script src="https://global.xirsys.net/xsdk/quickstart/xsdk.js"></script>
     <!-- <script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
@@ -45,6 +46,14 @@
         position: absolute;
         bottom: 0;
         right: 0;
+        
+      }
+      #hide{
+          background-size: cover;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+
       }
       #wraptex{
          float: left;
@@ -67,14 +76,17 @@
     <h3 id="peer1-id">My Peer: </h3>
     <div id="wrapvideo">
         <video id="friendStream"  width="200" height="150" controls></video>
+      
         <video id="localStream" width="200" height="150" controls></video>
-    </div>
-    <div id="wraptex">
+    
+</div>
+<div id="wraptex">
     <br>
     <input type="text" id="txtFriendId" placeholder="your friend id" />
     <br>
     <button id="btnCall">Call</button>
     <br>
+    <button id="hide">hide</button>
 </div>
 </div>
     
