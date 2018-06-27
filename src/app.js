@@ -4,7 +4,7 @@ const uid = require('uid')
 const $=require('jquery')
 const io =require('socket.io-client')
 
-const socket= io('https://stream-byhungbn.herokuapp.com/')
+const socket= io('https://stream-byhungbn.herokuapp.com')
 
 const openStream=require('./openCamera')
 const playVideo=require('./playVideo')
