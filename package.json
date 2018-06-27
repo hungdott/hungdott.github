@@ -1,0 +1,28 @@
+{
+  "name": "streambase",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000s\u0000t\u0000r\u0000e\u0000a\u0000m\u0000b\u0000a\u0000s\u0000e\u0000\r\u0000 \u0000",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "peerjs": "^0.3.14",
+    "uid": "^0.0.2",
+    "ice": "^3.7.1",
+    "socket.io-client": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hungdott/hungdott.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hungdott/hungdott.github.io/issues"
+  },
+  "homepage": "https://github.com/hungdott/hungdott.github.io#readme"
+}
