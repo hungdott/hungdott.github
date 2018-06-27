@@ -3,8 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Stream-Base by HungDo</title>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="https://global.xirsys.net/xsdk/quickstart/xsdk.css"></link>
     <script src="https://global.xirsys.net/xsdk/quickstart/xsdk.js"></script>
+    <script>
+        var qs = new $xirsys.quickstart({
+            channel : "hungdo99ttbn",
+            ident : "hungdo",
+            secret : "06081f0c-7558-11e8-a620-264837236acc",
+        });
+    </script> 
     <!-- <script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
@@ -81,10 +89,11 @@
     
 </div>
 <div id="wraptex">
+     <h3>user online</h3>
     <br>
-    <input type="text" id="txtFriendId" placeholder="your friend id" />
-    <br>
-    <button id="btnCall">Call</button>
+    <ul id="ulPeerId">
+
+    </ul>
     <br>
     <button id="hide">hide</button>
 </div>
