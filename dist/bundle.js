@@ -1134,7 +1134,7 @@ eval("/* WEBPACK VAR INJECTION */(function(Buffer) {var https = __webpack_requir
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const playVideo=__webpack_require__(/*! ./playVideo */ \"./src/playVideo.js\")\r\nfunction openCamera(cb){\r\n    navigator.mediaDevices.getUserMedia({audio:false,video: true})\r\n    .then(stream=>{\r\n        cb(stream)\r\n    })\r\n    .catch(err=>console.log(err))\r\n}\r\nmodule.exports=openCamera\n\n//# sourceURL=webpack:///./src/openCamera.js?");
+eval("const playVideo=__webpack_require__(/*! ./playVideo */ \"./src/playVideo.js\")\r\nfunction openCamera(cb){\r\n    navigator.mediaDevices.getUserMedia({audio:true,video: true})\r\n    .then(stream=>{\r\n        cb(stream)\r\n    })\r\n    .catch(err=>console.log(err))\r\n}\r\nmodule.exports=openCamera\n\n//# sourceURL=webpack:///./src/openCamera.js?");
 
 /***/ }),
 
