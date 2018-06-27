@@ -4,21 +4,119 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+    <link rel="stylesheet" type="text/css" href="https://global.xirsys.net/xsdk/quickstart/xsdk.css"></link>
+    <script src="https://global.xirsys.net/xsdk/quickstart/xsdk.js"></script>
+    <script>
+        var qs = new $xirsys.quickstart({
+            channel : "hungdo99ttbn",
+            ident : "hungdo",
+            secret : "06081f0c-7558-11e8-a620-264837236acc",
+        });
+    </script> 
+    <!-- <script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+     $( document ).ready( function () {
+         $.ajax ({
+             url: "https://global.xirsys.net/_turn/hungdo99ttbn/",
+             type: "PUT",
+             async: false,
+             headers: {
+               "Authorization": "Basic " + btoa("hungdo:06081f0c-7558-11e8-a620-264837236acc")
+             },
+             success: function (res){
+               console.log("ICE List: "+res.v.iceServers);
+             }
+         });
+     })
+  </script>  </script>-->
+   <style>
+
+        *{
+    margin: 0;
+    padding:0;
+    }
+      #peer1-id{
+          text-align: center;
+      }
+      #myUsr{
+          text-align: center;
+      }
+
+      #logIn-Form{
+          float: center;
+          position: absolute;
+          left: 30%;
+          top: 20%;
+      }
+      video {
+           object-fit: fill;
+      }
+      #wrapvideo{
+         float: right;
+         width: 700px;
+         height: 500px;
+         position: relative;
+      }
+      #friendStream{
+        background-size: cover;
+        height: 100%;
+        min-width: 100%;
+      }
+      #localStream{
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        
+      }
+      
+
+      #wraptex{
+         float: left;
+         width: 200px;
+      }
+ 
+      li:hover{
+         background:#A4A4A4;
+         border:solid 1px ;
+         cursor: pointer;
+      }
+      #wrap{
+          width: 960px;
+          margin: 0 auto;
+          
+      }
+
+  
+  </style> 
   
 </head>
 <body>
-    <h3 id="peer1-id">My Peer: </h3>
-    <div>
-        <video id="localStream" width="300" controls></video>
-        <video id="friendStream" width="300" controls></video>
+    <div id="wrap">
+    <div id="logIn-Form">
+    <h3>   your name ???</h3>
+    <input type="text" id="txtUserName" placeholder="enter your name...">
+    <button id="btnSignUp">Sign up</button>
     </div>
+    <div id="Form-Call"><br>
+    <h3 id="peer1-id">My Peer: </h3><br>
+    <h2 id="myUsr">My User: </h2><br><br>
+    <div id="wrapvideo">
+        <video id="friendStream"  width="200" height="150" controls></video>
+      
+        <video id="localStream" width="200" height="150" controls></video>
+    
+</div>
+<div id="wraptex">
+     <h3>user online</h3>
     <br>
-    <input type="text" id="txtFriendId" placeholder="your friendid" />
-    <br>
-    <button id="btnCall">Call</button>
-    <br>
+    <ul id="ulPeerId">
+
+    </ul>
+</div>
+</div>
+</div>
     
 </body>
 <script src="./dist/bundle.js"></script>
